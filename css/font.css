@@ -1,12 +1,5 @@
 @font-face {
-    font-family: Wanfont; /* �����������ƣ������⣩ */
-    font-display: swap; /* ���������ض�SEO�а��� */
+    font-family: Wanfont;
+    font-display: swap;  
     src: url(/source/fonts/Wanfont.ttf) format("ttf")
-} /* urlдָ�������Ŀ¼�����ӣ�format��д����ĸ�ʽ */
-
-/* �������� */
-body {
-    font-family: 'HYTMR', sans-serif;
 } 
-/* font-family�еĵ�һ����ǰ���������������� */
-/* �ڶ�����sans-serif���Դﵽ���������ص�Ŀ�ģ��Ż�SEO /*
