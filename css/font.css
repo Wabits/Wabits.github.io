@@ -4,10 +4,10 @@
     src: url('../font/JetBrainsMono-Regular.ttf') format("truetype");
 }
 @font-face{
-    font-family: 'HarmonyOS Sans SC';
+    font-family: 'Mai-1';
     font-display: swap;
-    src: url('../font/HarmonyOS_Sans_SC_Regular.ttf') format("truetype");
+    src: url('../font/Mai-1.ttf') format("truetype");
 }
 body {
-    font-family: 'JetBrains Mono','HarmonyOS Sans SC';
+    font-family: 'JetBrains Mono','Mai-1';
 }
