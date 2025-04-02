@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2025-04-02T09:08:15.000Z">
-<meta property="article:modified_time" content="2025-04-02T09:17:28.000Z">
+<meta property="article:modified_time" content="2025-04-02T09:39:06.000Z">
 <meta property="article:author" content="Wabits">
 <meta property="article:tag" content="Archlinux">
 <meta property="article:tag" content="Linux">
@@ -19,7 +19,7 @@
   "url": "http://example.com/2025/04/02/Archlinux%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/",
   "image": "https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png",
   "datePublished": "2025-04-02T09:08:15.000Z",
-  "dateModified": "2025-04-02T09:17:28.000Z",
+  "dateModified": "2025-04-02T09:39:06.000Z",
   "author": [
     {
       "@type": "Person",
@@ -161,13 +161,14 @@
   isToc: true,
   pageType: 'post'
 }</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Wabits的垃圾屋" type="application/atom+xml">
-</head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Wabits的垃圾屋</span></a><a class="nav-page-title" href="/"><span class="site-name">Archlinux安装记录</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Archlinux安装记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-02T09:08:15.000Z" title="发表于 2025-04-02 17:08:15">2025-04-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-02T09:17:28.000Z" title="更新于 2025-04-02 17:17:28">2025-04-02</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>作为一个 Linux 爱好者，最近决定尝试安装和配置 Archlinux。以下是我的详细折腾记录，引用了 <a target="_blank" rel="noopener" href="https://arch.icekylin.online/">arch.icekylin.online</a> 网站的内容。</p>
+</head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Wabits的垃圾屋</span></a><a class="nav-page-title" href="/"><span class="site-name">Archlinux安装记录</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Archlinux安装记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-02T09:08:15.000Z" title="发表于 2025-04-02 17:08:15">2025-04-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-02T09:39:06.000Z" title="更新于 2025-04-02 17:39:06">2025-04-02</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>作为一个 Linux 爱好者，最近决定尝试安装和配置 Archlinux。以下是我的详细折腾记录，引用了 <a target="_blank" rel="noopener" href="https://arch.icekylin.online/">arch.icekylin.online</a> 网站的内容。</p>
 <h2 id="为什么选择-Archlinux？"><a href="#为什么选择-Archlinux？" class="headerlink" title="为什么选择 Archlinux？"></a>为什么选择 Archlinux？</h2><p>Archlinux 是一个极简的滚动更新发行版，适合喜欢折腾和深入了解 Linux 的用户。它的安装过程需要手动配置，能够帮助用户学习 Linux 的底层原理。此外，Archlinux 的文档资源（Arch Wiki）非常详尽，几乎可以解决所有问题。</p>
 <p>相比其他发行版，Archlinux 的优势在于：</p>
 <ol>
 <li><strong>极简设计</strong>：只安装必要的组件，用户可以根据需求自由定制。</li>
 <li><strong>滚动更新</strong>：始终保持最新的软件版本，无需重新安装系统。</li>
-<li><strong>学习机会</strong>：通过手动安装和配置，深入了解 Linux 的工作原理。</li>
+<li><strong>强大的社区支持</strong>：Arch Wiki 提供了丰富的文档和教程，几乎涵盖了所有问题。</li>
+<li><strong>灵活性</strong>：用户可以根据自己的需求选择软件包和配置，完全掌控系统。</li>
 </ol>
 <h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><h3 id="1-安装前工作"><a href="#1-安装前工作" class="headerlink" title="1. 安装前工作"></a>1. 安装前工作</h3><h4 id="1-1"><a href="#1-1" class="headerlink" title="1-1."></a>1-1.</h4><p>安装镜像 iso 在开源镜像站（推荐）或者 <a target="_blank" rel="noopener" href="https://archlinux.org/download/">archlinux</a> 官方下载页面 下载。</p>
 <p>下面是国内常用的提供 archlinux 安装镜像的开源镜像站（选择一个）：</p>
