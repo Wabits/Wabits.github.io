@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Aae; /* �����������ƣ������⣩ */
+    font-display: swap; /* ���������ض�SEO�а��� */
+    src: url(/fonts/Aae.woff2) format("woff2")
+} /* urlдָ�������Ŀ¼�����ӣ�format��д����ĸ�ʽ */
+
+/* �������� */
+body {
+    font-family: 'Aae', sans-serif;
+} 
+/* font-family�еĵ�һ����ǰ���������������� */
+/* �ڶ�����sans-serif���Դﵽ���������ص�Ŀ�ģ��Ż�SEO /*
