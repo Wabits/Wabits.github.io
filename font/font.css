@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AaKLYLDYW (Non-Commercial Use)';
+    src: url('AaKLYLDYWNon-CommercialUse.woff2') format('woff2'),
+        url('AaKLYLDYWNon-CommercialUse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
