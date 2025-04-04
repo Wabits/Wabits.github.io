@@ -1,7 +1,7 @@
 @font-face {
     font-family: Aae; /* �����������ƣ������⣩ */
     font-display: swap; /* ���������ض�SEO�а��� */
-    src: url(/fonts/Aae.woff2) format("woff2")
+    src: url(https://cdn.jsdelivr.net/npm/wabits@1.0.2/Aae.woff2) format("woff2")
 } /* urlдָ�������Ŀ¼�����ӣ�format��д����ĸ�ʽ */
 
 /* �������� */
