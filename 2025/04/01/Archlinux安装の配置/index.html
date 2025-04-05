@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/wabits@1.0.2/ver.jpg">
 <meta property="article:published_time" content="2025-04-01T09:08:15.000Z">
-<meta property="article:modified_time" content="2025-04-04T13:19:11.434Z">
+<meta property="article:modified_time" content="2025-04-05T00:07:13.657Z">
 <meta property="article:author" content="Wabits">
 <meta property="article:tag" content="Archlinux">
 <meta property="article:tag" content="Linux">
@@ -19,7 +19,7 @@
   "url": "https://wabits.github.io/2025/04/01/Archlinux%E5%AE%89%E8%A3%85%E3%81%AE%E9%85%8D%E7%BD%AE/",
   "image": "https://unpkg.com/wabits@1.0.2/ver.jpg",
   "datePublished": "2025-04-01T09:08:15.000Z",
-  "dateModified": "2025-04-04T13:19:11.434Z",
+  "dateModified": "2025-04-05T00:07:13.657Z",
   "author": [
     {
       "@type": "Person",
@@ -161,7 +161,7 @@
   isToc: true,
   pageType: 'post'
 }</script><link rel="stylesheet" href="/css/font.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Wabits的小站" type="application/atom+xml">
-</head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Wabits的小站</span></a><a class="nav-page-title" href="/"><span class="site-name">Archlinux安装记录(配置)</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Archlinux安装记录(配置)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-01T09:08:15.000Z" title="发表于 2025-04-01 17:08:15">2025-04-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-04T13:19:11.434Z" title="更新于 2025-04-04 21:19:11">2025-04-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>作为一个 Linux 爱好者，最近决定尝试安装和配置 Archlinux。以下是我的详细折腾记录，引用了 <a target="_blank" rel="noopener" href="https://arch.icekylin.online/">arch.icekylin.online</a> 网站的内容。</p>
+</head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Wabits的小站</span></a><a class="nav-page-title" href="/"><span class="site-name">Archlinux安装记录(配置)</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Archlinux安装记录(配置)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-01T09:08:15.000Z" title="发表于 2025-04-01 17:08:15">2025-04-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-05T00:07:13.657Z" title="更新于 2025-04-05 08:07:13">2025-04-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>作为一个 Linux 爱好者，最近决定尝试安装和配置 Archlinux。以下是我的详细折腾记录，引用了 <a target="_blank" rel="noopener" href="https://arch.icekylin.online/">arch.icekylin.online</a> 网站的内容。</p>
 <h2 id="为什么选择-Archlinux？"><a href="#为什么选择-Archlinux？" class="headerlink" title="为什么选择 Archlinux？"></a>为什么选择 Archlinux？</h2><p>Archlinux 是一个极简的滚动更新发行版，适合喜欢折腾和深入了解 Linux 的用户。它的安装过程需要手动配置，能够帮助用户学习 Linux 的底层原理。此外，Archlinux 的文档资源（Arch Wiki）非常详尽，几乎可以解决所有问题。</p>
 <p>相比其他发行版，Archlinux 的优势在于：</p>
 <ol>
@@ -207,8 +207,9 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">fdisk -l /dev/nvme0n1<br></code></pre></td></tr></table></figure>
 <blockquote>
-<p>注意：<code>/dev/nvme0n1</code> 是你的硬盘设备名，确保选择正确的设备，以免数据丢失。<br>接下来格式化分区：</p>
+<p>注意：<code>/dev/nvme0n1</code> 是你的硬盘设备名，确保选择正确的设备，以免数据丢失。</p>
 </blockquote>
+<p>接下来格式化分区：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">mkfs.fat -F32 /dev/nvme0n1p1 <span class="hljs-comment"># 格式化 EFI 分区</span><br>mkfs.btrfs -f /dev/nvme0n1p2 <span class="hljs-comment"># 格式化根分区</span><br>mkswap /dev/nvme0n1p3 <span class="hljs-comment"># 格式化交换分区</span><br>mkfs.btrfs -f /dev/nvme0n1p4 <span class="hljs-comment"># 格式化主目录分区</span><br>mkfs.btrfs -f /dev/nvme0n1p5 <span class="hljs-comment"># 格式化数据分区</span><br></code></pre></td></tr></table></figure>
 <p>挂载分区：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">mount /dev/nvme0n1p2 /mnt <span class="hljs-comment"># 挂载根分区</span><br><span class="hljs-built_in">mkdir</span> /mnt/boot<br>mount /dev/nvme0n1p1 /mnt/boot <span class="hljs-comment"># 挂载 EFI 分区</span><br><span class="hljs-built_in">mkdir</span> /mnt/home<br>mount /dev/nvme0n1p4 /mnt/home <span class="hljs-comment"># 挂载主目录分区</span><br><span class="hljs-built_in">mkdir</span> /mnt/data<br>mount /dev/nvme0n1p5 /mnt/data <span class="hljs-comment"># 挂载数据分区</span><br></code></pre></td></tr></table></figure>
@@ -255,7 +256,7 @@
 
 <h4 id="4-8安装完成"><a href="#4-8安装完成" class="headerlink" title="4-8安装完成"></a>4-8安装完成</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span> <span class="hljs-comment"># 退出安装环境</span><br>umount -R /mnt <span class="hljs-comment">#卸载新分区</span><br>reboot <span class="hljs-comment">#重启系统</span><br></code></pre></td></tr></table></figure>
 <blockquote>
-<p>注意重启前要先拔掉u盘，否则你重启后还是进安装程序而不是安装好的系统</p>
+<p>注意:重启前要先拔掉u盘，否则你重启后还是进安装程序而不是安装好的系统</p>
 </blockquote>
 <p>设置开机自启动 networkmanager 服务，即可连接网络</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">systemctl <span class="hljs-built_in">enable</span> NetworkManager <span class="hljs-comment"># 设置开机自启并立即启动 NetworkManager</span><br></code></pre></td></tr></table></figure>
